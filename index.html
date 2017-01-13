@@ -80,15 +80,15 @@ html, body, #googft-mapCanvas {
         legend.id = 'legend';
         var content = [];
         content.push('<h3>Marker Legend</h3>');
-        content.push('<p><a href="http://imgur.com/pLT3hDu"><img src="http://i.imgur.com/pLT3hDu.png" title="source: imgur.com" /></a> -Lead Hazard</p>');
+        content.push('<p><a href="http://imgur.com/pLT3hDu"><img src="http://i.imgur.com/pLT3hDu.png" title="source: imgur.com" /></a> -Lead hazard</p>');
         content.push('<p><a href="http://imgur.com/pfT5zc2"><img src="http://i.imgur.com/pfT5zc2.png" title="source: imgur.com" /></a> -Hazard, but activity after June, 2016</p>');
-        content.push('<p><a href="http://imgur.com/6CCDtYq"><img src="http://i.imgur.com/6CCDtYq.png" title="source: imgur.com" /></a> -Hazard Abated</p>');
-        content.push('<p><a href="http://imgur.com/UTgL5wS"><img src="http://i.imgur.com/UTgL5wS.png" title="source: imgur.com" /></a> -Uncertain Status</p>');
+        content.push('<p><a href="http://imgur.com/6CCDtYq"><img src="http://i.imgur.com/6CCDtYq.png" title="source: imgur.com" /></a> -Hazard abated</p>');
+        content.push('<p><a href="http://imgur.com/UTgL5wS"><img src="http://i.imgur.com/UTgL5wS.png" title="source: imgur.com" /></a> -Uncertain status</p>');
         content.push('<p><a href="http://imgur.com/YFzGVdH"><img src="http://i.imgur.com/YFzGVdH.png" title="source: imgur.com" /></a> -No hazard identified</p>');
         content.push('<p><a href="http://imgur.com/IhNHdtY"><img src="http://i.imgur.com/IhNHdtY.png" title="source: imgur.com" /></a> -Other source identified</p>');
         legend.innerHTML = content.join('');
         legend.index = 1;
-        map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(legend);
+        map.controls[google.maps.ControlPosition.RIGHT_TOP].push(legend);
     
     if (isMobile) {
       var legend = document.getElementById('googft-legend');
